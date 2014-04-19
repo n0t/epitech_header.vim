@@ -145,7 +145,7 @@ function HeaderCreate(new)
     setl noautoindent nosmartindent nocindent
     execute "normal! ggO" .
       \ s:cs . "\n".
-      \ s:cc . expand("%:t") . s:txt_for . expand("%:p:h:t") . s:txt_in . expand("%:p:h") . "\n".
+      \ s:cc . expand("%:t") . " " . s:txt_for . expand("%:p:h:t") . s:txt_in . expand("%:p:h") . "\n".
       \ s:cc . "\n".
       \ s:cc . s:txt_made_by . s:name . "\n".
       \ s:cc . s:txt_login . s:txt_mail_s . s:login . s:txt_mail_e . "\n".
